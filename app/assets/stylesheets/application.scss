@@ -26,6 +26,18 @@
 .step-1{
     z-index: 1;
 }
+.logo {
+    margin-top: 10px;
+    color: #00A9F3;
+    border-top: 2px solid black;
+    font-weight: bold;
+    border-left: 2px solid skyblue;
+    padding: 10px 20px;
+    text-decoration: underline;
+}
+.icon-bar {
+    border: 2px solid #00A9F3;
+}
 .main-content{
     min-height: 100vh;
 }
@@ -55,6 +67,55 @@
     background-size: cover;
     min-height: 100vh;
     padding: 100px 50px;
+}
+
+.login-container{
+    width: 400px;
+    margin: 0 auto;
+    margin-top: 10vh;
+    text-align: center;
+}.auth-options{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+}
+.form-input{
+    width: 100%;
+    padding: 10px;
+
+    &:focus{
+        outline: 0;
+        border: none;
+    }
+}
+.active a{
+    color: white !important;
+}
+.auth-actions{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    >*{
+        background-color: black;
+        width: 100%;
+        padding: 15px 10px;
+        color: #fff;
+        min-width: fit-content;
+    }
+    >*:hover {
+        background-color: gray;
+    }
+}
+.auth-button {
+    width: 100%;
+    padding: 10px;
+    background-color: skyblue ;
+    border: none;
+}
+.text-white {
+    color: #fff !important;
 }
 .text-field{
    margin: 10px 0;
@@ -261,10 +322,11 @@ a, a:hover {
 
     background: #000;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     color: white; 
-    width: 100vw;
+    width: 100%;
 }
 
 .header {
